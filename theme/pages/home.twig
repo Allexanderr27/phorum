@@ -1,0 +1,18 @@
+<h1>Home</h1>
+
+<table>
+    <tr>
+        <th>Category</th>
+        <th>Last topic</th>
+    </tr>
+    <tr>
+        <td class="leftpart">
+            {% for category in categories %}
+                <h3><a href="category.php">{{ category.name }} ({{ category.topic_count }})</a></h3>
+            {% endfor %}
+        </td>
+        <td class="rightpart">
+            <h3><a href="topic.php?=">Topic subject</a></h3>
+        </td>
+    </tr>
+</table>
